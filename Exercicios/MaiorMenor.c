@@ -9,11 +9,11 @@ int main(){
     int a;
     scanf("%d", &a);
 
-    printf("\nDigite o primeiro valor: ");
+    printf("\nDigite o segundo valor: ");
     int b;
     scanf("%d", &b);
 
-    printf("\nDigite o primeiro valor: ");
+    printf("\nDigite o terceiro valor: ");
     int c;
     scanf("%d", &c);
 
