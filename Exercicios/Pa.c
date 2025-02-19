@@ -4,12 +4,14 @@
 #include <math.h>
 
 int main(){
-printf("\nDigite o valor de n: ");
-int n;
-scanf("%d", &n);
-int pa = (1 + (n-1)*4); //R é o diferença entre os numeros
+    printf("\nDigite o valor de n: ");
 
-printf("\nO numero %dº da PA é: %.2d: ", n, pa);
+    int n;
+    scanf("%d", &n);
+    
+    int pa = (1 + (n-1)*4); //R é o diferença entre os numeros
+
+    printf("\nO numero %dº da PA é: %.2d: ", n, pa);
 
 return 0;
 }
