@@ -1,0 +1,93 @@
+Lista 01 - Comandos Básicos
+1. Quais são os tipos de variáveis básicas na linguagem C?
+
+R= Int - para valores inteiros
+float- para números decimais
+Double-para números decimais
+Char- para caracteres
+Bool- verdadeiro ou falso
+
+
+2. É apresentado nos itens abaixo, diversos nomes de variável em C que um aluno imple-
+mentou. Indique as opções válidas e justifique por qual motivo as falsas não podem ser
+utilizadas.
+If, a_b_2, %H789, _yes, long, j, int, idade, 9xy, a36, x*y, –j, NomeCompleto
+
+R= if - estrutura condicional
+%H789_ começa com o simbolo % que se refere ao resto da divisão em operações 
+long - palavra chave da linguagem
+int - não pode ser uma variavel int com o nome int
+9xz nome da variavel começando com número
+X*Y - nome da variavel fazendo operações lógicas
+-j - nome da variavel começando com o sinal de -
+
+Válidos - a_b_2, _yes, j, idade, a36, NomeCompleto
+
+
+3. Um dos primeiros programas que fazemos ao aprender uma nova linguagem de progra-
+mação é a de impressão na tela da frase Olá, mundo!”. Crie esse programa e descreva as
+partes principais de um programa em C.
+
+R= #include <stdio.h> //biblioteca base de programas feitos em C
+
+int main(){ // função principal
+
+Print("Óla Mundo!"); //imprimir na tela 
+
+retura 0; //A função não retorna nenhum valor
+}
+
+
+4. Um aluno criou o programa da questão anterior, mas há problemas em seu código. Indique
+quais são e justifique sua resposta.
+
+#i n c l u d e <s t u d i o . h> //biblioteca escrita errada
+
+int (  //erro de sintaxe,falta chave,parênteses fechando o código
+
+p r i n t f ( "Ola , ␣mundo ! \ n" ) //frase escrita incoreetamente e falta de ";"
+
+return 0 //falta de ";"
+)
+
+Codígo corrigido:
+#include <stdio.h> 
+
+int main(){ 
+
+Print("Óla Mundo!"); 
+
+retura 0; 
+}
+
+5. CO programa abaixo lê o nome do usuário, sua idade e altura. Complete os espaços em
+branco para que o programa funcione.
+
+#i n c l u d e <s t d i o . h>
+int main ( ) {
+char nome [ 5 0 ] ;
+int i d a d e ;
+f l o a t Altura;
+p r i n t f ( " D i g i t e ␣ seu ␣nome : ␣" ) ;
+s c a n f ( nome , 5 0 , s t d i n ) ;
+p r i n t f ( " D i g i t e ␣ sua ␣ i d a d e : ␣" ) ;
+s c a n f ( "%d" , idade) ;
+p r i n t f ( " D i g i t e ␣ sua ␣ a l t u r a ␣ (em␣ metros ) : ␣" ) ;
+s c a n f ( "%d" , &a l t u r a ) ;
+p r i n t f ( "Nome : ␣%s " , nome) ;
+p r i n t f ( " Idade :%d anos \n" , i d a d e ) ;
+p r i n t f ( " A l t u r a : %f metros \n" , a l t u r a ) ;
+return 0 ;
+}
+
+9. A operação lógica (fezChuva&&temp ≥ 30)||(a >= b)&&(c! = −10)||(!d) é verdadeira
+ou falsa? Considere as seguintes atribuições:
+• fezChuva = true
+• temp = 30
+• a = 4
+• b = 6
+• c = 10
+• d = true
+
+R= VERDADEIRO
+

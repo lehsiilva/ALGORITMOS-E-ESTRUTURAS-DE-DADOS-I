@@ -7,9 +7,11 @@ int main(){
     printf("\nDígite um número inteiro de três digitos: ");
     int num;
     scanf("%d", &num);
+
     int centena = (num/100);
     int dezena = (num%100)/10;
     int unidade = num%10;
+    
     printf("\nO número invertido é : %d%d%d", unidade, dezena, centena);
 
 return 0;
