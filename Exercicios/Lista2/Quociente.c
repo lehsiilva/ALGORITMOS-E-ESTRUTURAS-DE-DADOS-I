@@ -1,0 +1,2 @@
+/*Ler dois valores reais. Calcular e escrever o quociente do primeiro pelo segundo se este
+for diferente de zero.*/
