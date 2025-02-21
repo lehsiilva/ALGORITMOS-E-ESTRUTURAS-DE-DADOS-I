@@ -4,3 +4,13 @@
 • Se for H, calcular e escrever a área do hexágono inscrito.
 • Se for outro caractere que não estes, escrever uma mensagem apropriada.
 1*/
+
+#include <stdio.h>
+
+int main(){
+
+
+
+
+    return 0;
+}

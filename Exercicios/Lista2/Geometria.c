@@ -6,3 +6,13 @@ quadrado inscrito no mesmo.
 • Se for outro número inteiro que não estes, ler a medida do lado de um quadrado,
 calcular e escrever a área da coroa circular formada pelo círculo inscrito e circunscrito
 a este quadrado.*/
+
+#include <stdio.h>
+
+int main(){
+
+
+
+
+    return 0;
+}
