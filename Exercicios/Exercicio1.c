@@ -3,6 +3,7 @@
 * Caso contrário, se os dois forem maior que 20, realize a subtração do maior pelo menor,
 * Senão, se um deles for menor do que 10 e o outro diferente de 0 realize a divisão do primeiro pelo segundo.
 * Finalmente, se nenhum dos casos solicitados for válido, mostre seu nome na tela.*/
+#include <stdio.h>
 
 int main(){
     printf("\nDigite 2 valores: ");
