@@ -40,7 +40,7 @@ int main(){
     }else if (num1 > 20 && num2 > 20){ //Se os dois forem maior que 20
         printf("%d\n", maior - menor);
 
-    }else if ((num1 > 10 && num2 != 0) || (num2 > 10 && num1 !=0)){ //Se um deles for maior do que 10 e o outro diferente de 0
+    }else if ((num1 < 10 && num2 != 0) || (num2 < 10 && num1 !=0)){ //Se um deles for menor do que 10 e o outro diferente de 0
         printf("%.2f\n", (float)num1/num2);
 
     }else{
