@@ -1,1 +1,0 @@
-/*Faça um programa para imprimir os múltiplos de 5.*/
