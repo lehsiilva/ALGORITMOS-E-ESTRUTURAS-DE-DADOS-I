@@ -7,17 +7,21 @@ int main(){
     int num;
     scanf("%d", &num);
 
+    int sequencia = 1;
+    
+    int i = 0;
 
-    for(int i = 1; i<= num; i++){
-        i+=4;
-        printf("%d ", i);
+    printf("%d ", sequencia);
 
-        for(int j = 1; j<= num; j++){
-        i+=7;
-        printf("%d ", i);
-        }
-        
+    while(i < num-1){
+        sequencia+=4;
+        printf("%d ", sequencia);
+
+        sequencia+=7;
+        printf("%d ", sequencia);
+
+    i++;
     }
-
-
+  
 }
+        
