@@ -6,4 +6,5 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Operadores
 - Estruturas Condicionais
 - Laços de Repetição
+- Modularização
 - Funções e Procedimentos
