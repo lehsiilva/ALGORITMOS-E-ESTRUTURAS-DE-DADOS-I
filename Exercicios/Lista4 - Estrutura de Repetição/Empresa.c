@@ -36,11 +36,13 @@ int main() {
             if(valor <= 0){
                 printf("\nInvalido");
 
-            }else if (valor < 2000 && valor > maiorabaixo) {
+            }else {
+                if(valor < 2000 && valor > maiorabaixo) {
                 maiorabaixo = valor;
 
-            } else if(valor > 2000 && valor > maioracima) {
+                } if(valor > 2000 && valor > maioracima) {
                 maioracima = valor;
+                }
             }
 
         }while(valor <= 0);
