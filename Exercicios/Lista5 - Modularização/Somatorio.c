@@ -28,12 +28,9 @@ double somaUmSobreImpar(int n){
 
     double somarAnterior = 0.0;
 
-    int cont = 0;
-
-    for(int i = soma; cont < n ; i-=2){
+    for(int i = (double)soma; i > 0  ; i-=2){
 
         somarAnterior += (1.0/i);
-        cont ++;
 
     }
 
