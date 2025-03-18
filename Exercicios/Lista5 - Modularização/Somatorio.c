@@ -27,13 +27,10 @@ double somaUmSobreImpar(int n){
 
     double somarAnterior = 0.0;
 
-    int cont = 0;
-
-    for(int i = 0; cont < n  ; i++){
+    for(int i = 0; i < n  ; i++){
 
         somarAnterior += UmSobreImpar(i);
 
-        cont++;
     }
 
     return somarAnterior;

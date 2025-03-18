@@ -47,11 +47,9 @@ double parSobreImpar(int n){
 double somaParSobreImpar(int n){
     
     double somatorio = 0.0;
-    int cont = 0;
 
-    for(int i = 1; cont < n; i++){
+    for(int i = 1; i < n; i++){
         somatorio += parSobreImpar(i);  // Soma os n primeiros termos
-        cont++;
     }
 
     return somatorio;

@@ -1,6 +1,5 @@
-/*Fazer a função que recebe um número inteiro n, um número real x e retorna o n-ésimo
-termo da sequência abaixo. Utilize a função desenvolvida na letra a da questão anterior.
-2x/3 , 4x^2/5 , 6x^3/7 , 8x^4/9 , 10x^5/11 , . .*/
+/*Fazer uma função que recebe um número inteiro n, um real x e retorna o produto dos n
+primeiros termos da sequência acima. Utilize a função desenvolvida na questão anterior.*/
 
 #include <stdio.h>
 #include <math.h>
@@ -53,10 +52,25 @@ double sequencia(int n, double x){
     for(int i = 0; i < n; i ++){
 
         resul = seq * pow(x, i+1);
+
     }
 
     return resul;
 }
+
+double produto(int n, double x) {
+   
+    double somaProduto = 1.0;
+
+    for (int i = 1; i <= n; i++) {  
+        
+        somaProduto *= sequencia(i,x);
+       
+    }
+
+    return somaProduto;
+}
+
 
 
 
@@ -85,5 +99,7 @@ int main(){
 
    double resulSeq = sequencia(n, x);
    printf("\nResultado Sequencia: %.2lf", resulSeq);
-}
 
+   double resulProduto = produto(n, x);
+   printf("\nResultado Produto: %.2lf", resulProduto);
+}
