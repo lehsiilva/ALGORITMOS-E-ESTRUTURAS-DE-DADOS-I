@@ -24,14 +24,16 @@ double UmSobreImpar(int n){
 }
 
 double somaUmSobreImpar(int n){
-    double soma = UmSobreImpar(n);
 
     double somarAnterior = 0.0;
 
-    for(int i = (double)soma; i > 0  ; i-=2){
+    int cont = 0;
 
-        somarAnterior += (1.0/i);
+    for(int i = 0; cont < n  ; i++){
 
+        somarAnterior += UmSobreImpar(i);
+
+        cont++;
     }
 
     return somarAnterior;
