@@ -87,5 +87,7 @@ int main(){
 
    double fat = fatorial(n, x);
    printf("\nResultado Sequencia: %.2lf", fatorial);
+
+   return 0;
 }
 
