@@ -1,6 +1,6 @@
-/*Fazer uma função que recebe um número inteiro n, um número real x e retorna o n-ésimo
-termo da sequência abaixo. Utilize as funções desenvolvidas anteriormente
-2x/3! , 4x^2/5! , 6x^3/7! , 8x^4/9! , 10x^5/11! , . .*/
+/*Fazer uma função que recebe um número inteiro n, um número real x e retorna o somatório
+dos n primeiros termos da sequência mostrada na questão anterior*/
+
 
 #include <stdio.h>
 #include <math.h>
@@ -49,6 +49,13 @@ double multiplica(int n, int x){
     return mult;
 }
 
+double somatorio(int n, int x){
+    double soma = 0.0;
+    for(int i = 1; i <= n; i ++){
+        soma += multiplica(i,x);
+    }
+    return soma;
+}
 
 int main(){
 
@@ -70,6 +77,9 @@ int main(){
 
     double resulfuncao = multiplica(n,x);
     printf("\nResultado Função = %.2lf", resulfuncao);
+
+    double resulsomatorio = somatorio(n,x);
+    printf("\nResultado Somatorio = %.2lf", resulsomatorio);
 
     return 0;
 
