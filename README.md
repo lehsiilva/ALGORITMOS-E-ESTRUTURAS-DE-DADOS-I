@@ -8,3 +8,4 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Laços de Repetição
 - Modularização
 - Funções e Procedimentos
+- Recursividade
