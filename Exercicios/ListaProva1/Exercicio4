@@ -6,11 +6,11 @@ algarismos pares que o constitui. Exemplo: 19282 possui dois algarismo pares 2 e
 int par(int num){
 	int soma,resto,par;
 	par = 0;
-		while(n>0){
+		while(num>0){
 			resto = num%10;
 			soma = num;
 			num/=10;
-				if(num%2==0){
+				if(resto%2==0){
 					par++;
 				}
 
