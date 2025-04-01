@@ -18,7 +18,7 @@ int main(){
 
     float mediaTurma;
 
-    float mediaAlta;
+    float mediaAlta = 0;
 
     float mediaAlunoResp;
 
@@ -26,23 +26,27 @@ int main(){
     for (int i = 1; i <= numAlunos; i++){
         
         for(int j = 1; j <= numProvas; j++){
-            printf("\nDigite a nota da %d prova: ", j);
+            printf("\nDigite a nota do %d aluno na %d prova: ", i,j);
             int nota;
             scanf("%d", &nota);
             mediaAluno+=nota;
+            mediaAlunoResp = mediaAluno/numProvas;
+        
         }
-
-        mediaAlunoResp = mediaAluno/numProvas;
-        printf("A media do aluno é: %.2f", mediaAlunoResp);
-
-        mediaTurma = mediaAlunoResp/numProvas;
-        printf("\nMedia da turma: %.2f", mediaTurma);
-
+         
         if(mediaAlunoResp >= 80){
-            mediaAlta++;
+            mediaAlta ++;
         }
-        printf("\nO percentual acima de 80%% é: %.2f", mediaAlta );
+        
+        printf("A media do %d aluno é: %.2f\n", i, mediaAlunoResp);
+
+    
     }
+
+    mediaTurma = mediaAlunoResp/numProvas;
+
+    printf("\nMedia da turma: %.2f", mediaTurma);
+    printf("\nO percentual acima de 80%% é: %.2f", mediaAlta );
 
 
 
