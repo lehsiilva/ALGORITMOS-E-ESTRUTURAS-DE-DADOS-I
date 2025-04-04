@@ -9,3 +9,4 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Modularização
 - Funções e Procedimentos
 - Recursividade
+- Vetores
