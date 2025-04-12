@@ -10,4 +10,5 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Funções e Procedimentos
 - Recursividade
 - Vetores
+- Métodos de Ordenação
 - Matrizes
