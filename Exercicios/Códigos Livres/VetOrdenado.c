@@ -2,11 +2,15 @@
 
 #include <stdio.h>
 
+void vetor(){
+    
+}
+
 void ordenado(){
 
 }
 
 
 int main(){
-    
+
 }
