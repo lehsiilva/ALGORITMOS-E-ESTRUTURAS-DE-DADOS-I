@@ -3,5 +3,10 @@
 #include <stdio.h>
 
 void ordenado(){
+
+}
+
+
+int main(){
     
 }
