@@ -64,13 +64,14 @@ double abaixoInf(int linha, int coluna,double m[linha][coluna]){
 
        
 
-        return (double)maiorAbaixo;
+    return maiorAbaixo;
 
 
 
 }
 
 void diferenca(int linha, int coluna,double m[linha][coluna]){
+    
     double acima = acimaSup(linha, coluna, m);
     double abaixo = abaixoInf(linha, coluna, m);
 
