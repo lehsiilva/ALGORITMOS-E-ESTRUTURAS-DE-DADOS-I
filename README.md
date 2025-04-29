@@ -12,3 +12,4 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Vetores
 - Métodos de Ordenação
 - Matrizes
+- Strings
