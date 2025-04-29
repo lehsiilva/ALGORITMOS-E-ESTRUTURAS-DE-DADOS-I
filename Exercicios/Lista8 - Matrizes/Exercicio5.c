@@ -107,6 +107,8 @@ bool primosverifica(int num){
        
     }
 
+    return true;
+
 }
 
 
