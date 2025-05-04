@@ -38,7 +38,7 @@ void inverter(char str[max]){
         j++;
     }
 
-    v[j]= '\0';
+    
 
     for(int k = 0; k < qnt; k++){
 
