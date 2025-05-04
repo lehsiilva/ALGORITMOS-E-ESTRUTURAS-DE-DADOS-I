@@ -19,9 +19,10 @@ int cont(char str[max]){
 
 void lerInvertido(char str[max]){
 
-    int qnt = cont(str); 
+    int qnt = cont(str);
+    int tam = qnt - 1; 
 
-    for(int i = qnt; i >= 0; i--){
+    for(int i = tam; i >= 0; i--){
         printf("%c",str[i]);
     }
 
