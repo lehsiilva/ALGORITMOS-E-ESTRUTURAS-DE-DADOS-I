@@ -29,12 +29,13 @@ void ordenar ( int *v, int *k){
     int troca;
 
     for (i = 0 ; i < 5 ; i++ ){
-        junto[i]= v[i];
+        *(junto + i) = *(v + i);
     }
 
 
         for(int j = 0 ; j < 5 ; j++){
-            junto[i]= k[j];
+            
+            *(junto + i)= *(k + j);
             i++;
         }
 
@@ -42,10 +43,12 @@ void ordenar ( int *v, int *k){
             for (int a = 0 ; a < 10 ; a++ ){
 
                 for(int b = 0 ; b < 10-1-a ; b++ ){
-                    if(junto[b] > junto[b+1]){
-                        troca = junto[b];
-                        junto[b] = junto[b+1];
-                        junto[b+1] = troca;
+
+                    if(*(junto + b) > *(junto + b + 1)){
+                        
+                        troca = *(junto + b);
+                        *(junto + b) = *(junto + b + 1);
+                        *(junto + b + 1)= troca;
                     }
                 } 
             }
@@ -53,7 +56,7 @@ void ordenar ( int *v, int *k){
     printf("\n vetor ordenado: ");
 
     for (int c = 0; c  < 10 ; c++){
-        printf("%d ", junto[c]);
+        printf("%d ", *(junto + c));
     }
 
 }
