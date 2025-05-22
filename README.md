@@ -14,4 +14,6 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Matrizes
 - Strings
 - Ponteiro
+- Ponteiros e Vetores
+- Ponteiros e Matrizes
   
