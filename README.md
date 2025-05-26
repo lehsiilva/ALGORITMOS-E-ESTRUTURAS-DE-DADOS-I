@@ -16,4 +16,6 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Ponteiro
 - Ponteiros e Vetores
 - Ponteiros e Matrizes
+- Aritmética de Vetores
+- Structs em C
   
