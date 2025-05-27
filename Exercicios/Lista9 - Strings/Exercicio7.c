@@ -20,11 +20,29 @@ void ler(char str[max], char str2[max]){
 
 void conferir(char str[max],char str2[max]){
 
+    int tam1 = strlen(str);
+    int tam2 = strlen(str2);
 
-    if(strstr(str,str2) != NULL){
-        printf("\nPalavra contida");
+    int cont = 0;
+    int j;
+
+    for(int i = 0; i <= tam1 - tam2; i++){
+        for( j = 0; j < tam2; j++){
+            if(str[i+j] != str2[j]){
+                break;
+            }
+        }
+
+        if(j == tam2){
+            cont++;
+        }
+    }
+
+    if(cont != 0){
+        printf("\nA string 1 esta contida na 2");
+        
     }else{
-        printf("\nNao ha");
+        printf("\nA string 1 nao esta contida na 2");
     }
 
 
