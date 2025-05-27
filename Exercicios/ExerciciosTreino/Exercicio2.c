@@ -39,7 +39,7 @@ void reverso(char str[]){
 
     int cont = tam - 1;
 
-    int nova[tam];
+    char nova[tam];
 
     int j = 0;
 
@@ -51,10 +51,11 @@ void reverso(char str[]){
 
     }
 
+    nova[tam] = '\0';
+
     printf("\nString invertida: ");
-    for(int a = 0; a < tam; a++){
-        printf("%c", nova[a]);
-    }
+    printf("%s", nova);
+
 }
 
 int main(){
