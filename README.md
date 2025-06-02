@@ -1,7 +1,7 @@
-# Exercicios_AEDS1
-Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como forma de praticar meus conhecimentos e aprimorá-los.
+# AEDSI - C/C++
+Exercícios desenvolvidos em C e C++ para as aulas de Algoritmos e Estruturas de Dados como forma de praticar meus conhecimentos e aprimorá-los.
 
-## Tópicos Aprendidos até o momento:
+## Tópicos Aprendidos até o momento (Linguagem C):
 - Sintaxe
 - Operadores
 - Estruturas Condicionais
@@ -17,5 +17,12 @@ Exercícios desenvolvidos para as aulas de Algoritmos e Estruturas de Dados como
 - Ponteiros e Vetores
 - Ponteiros e Matrizes
 - Aritmética de Vetores
-- Structs em C
+- Structs
+
+## Tópicos Aprendidos até o momento (Linguagem C++):
+- Classes
+- Construtores
+- Encapsulamento
+- Metódos Acessores
+- Herança
   
