@@ -31,11 +31,12 @@ int main(){
 
     srand(time(NULL));
 
-    for(int i = 0; i < 3; i++){
+    for(int i = 0; i < 10; i++){
 
         printf("\nDigite o nome da pessoa %d: ", i+1);
-        scanf("%[^\n]", &pessoa[i].nome);
         getchar();
+        scanf("%[^\n]", pessoa[i].nome);
+        
 
         printf("\nDigite a altura da pessoa %d: ", i+1);
         scanf("%f", &pessoa[i].altura);
@@ -46,7 +47,7 @@ int main(){
         data[i].ano = 1950 + rand() % 51;
     }
 
-    for(int j = 0; j < 3; j++){
+    for(int j = 0; j < 10; j++){
 
         printf("\nNome: %s", pessoa[j].nome);
         printf("\nAltura: %.2f", pessoa[j].altura);
@@ -57,4 +58,4 @@ int main(){
 
     return 0;
 
-}
+}   
