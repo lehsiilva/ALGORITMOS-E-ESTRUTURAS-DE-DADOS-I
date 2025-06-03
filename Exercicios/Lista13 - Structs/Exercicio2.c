@@ -37,7 +37,7 @@ int main(){
     printf("\nDigite o valor anterior (em reais): ");
     scanf("%lf", &bolsa_valores.valor_anterior);
 
-    float resul = ((bolsa_valores.valor_atual - bolsa_valores.valor_anterior) / bolsa_valores.valor_anterior) * 100;
+    float resul = ((bolsa_valores.valor_atual - bolsa_valores.valor_anterior) / bolsa_valores.valo) * 100;
 
     printf("\nVariacao de %.2lf%%", resul);
 
