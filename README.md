@@ -1,7 +1,7 @@
 # ALGORITMOS E ESTRUTURA DE DADOS I - C/C++
 Exercícios desenvolvidos em C e C++ para as aulas de Algoritmos e Estruturas de Dados como forma de praticar meus conhecimentos e aprimorá-los.
 
-## Tópicos Aprendidos até o momento (Linguagem C):
+## Tópicos Aprendidos (Linguagem C):
 - Sintaxe
 - Operadores
 - Estruturas Condicionais
@@ -19,7 +19,7 @@ Exercícios desenvolvidos em C e C++ para as aulas de Algoritmos e Estruturas de
 - Aritmética de Vetores
 - Structs
 
-## Tópicos Aprendidos até o momento (Linguagem C++):
+## Tópicos Aprendidos (Linguagem C++):
 - Classes
 - Construtores
 - Encapsulamento
