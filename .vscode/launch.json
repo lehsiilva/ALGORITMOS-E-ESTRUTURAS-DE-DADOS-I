@@ -2,21 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "teste",
-      "request": "launch",
-      "mainClass": "teste",
-      "projectName": "Exercicios_AEDS1_537e962f"
-    },
-    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/letic/Desktop/GitHub/Exercicios_AEDS1/Exercicios/ListaProva2",
-      "program": "c:/Users/letic/Desktop/GitHub/Exercicios_AEDS1/Exercicios/ListaProva2/build/Debug/outDebug",
+      "cwd": "c:/Users/letic/Desktop/GitHub/Exercicios_AEDS1/Exercicios/Verde",
+      "program": "c:/Users/letic/Desktop/GitHub/Exercicios_AEDS1/Exercicios/Verde/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
