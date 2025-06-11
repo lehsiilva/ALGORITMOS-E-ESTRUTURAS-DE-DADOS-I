@@ -17,6 +17,8 @@ class Retangulo{
         largura = l;
     }
 
+    ~Retangulo(){}
+
     void calcularArea(){
         int area = altura * largura;
         cout << "Area: " << area << endl;
