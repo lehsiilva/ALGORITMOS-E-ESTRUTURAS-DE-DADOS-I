@@ -12,31 +12,31 @@ using namespace std;
 
 class Livro{
     private:
-    string titulo;
-    string autor;
+        string titulo;
+        string autor;
 
     public:
-    Livro(string titulo, string autor){
-        this->titulo = titulo;
-        this->autor = autor;
-    }
+        Livro(string titulo, string autor){
+            this->titulo = titulo;
+            this->autor = autor;
+        }
 
-    string getTitulo(){
+        string getTitulo(){
 
-        return titulo;
+            return titulo;
 
-    }
+        }
 
-    string getAutor(){
+        string getAutor(){
 
-        return autor;
-    }
+            return autor;
+        }
 
-    void exibirInformacoes(){
+        void exibirInformacoes(){
 
-        cout << "Livro: " << titulo << endl;
-        cout << "Autor: " << autor << endl;
-    }
+            cout << "Livro: " << titulo << endl;
+            cout << "Autor: " << autor << endl;
+        }
 
 };
 
