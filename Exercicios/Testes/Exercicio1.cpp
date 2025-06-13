@@ -10,82 +10,81 @@ using namespace std;
 
 class Aluno{
     private:
-    int matricula;
-    string nome;
-    string curso;
-    int periodo;
+        int matricula;
+        string nome;
+        string curso;
+        int periodo;
 
     public:
+        Aluno(){
+            matricula = 0;
+            nome = "Desconhecido";
+            curso = "Desconhecido";
+            periodo = 0;
+        }
 
-    Aluno(){
-        matricula = 0;
-        nome = "Desconhecido";
-        curso = "Desconhecido";
-        periodo = 0;
-    }
+        Aluno(int matricula, string nome, string curso, int periodo){
+            this->matricula = matricula;
+            this->nome = nome;
+            this->curso = curso;
+            this->periodo = periodo;
+        }
 
-    Aluno(int matricula, string nome, string curso, int periodo){
-        this->matricula = matricula;
-        this->nome = nome;
-        this->curso = curso;
-        this->periodo = periodo;
-    }
-
-    
-    void setMatricula(int matricula){
-
-        this->matricula = matricula;
-
-    }
-
-    int getMatricula(){
-
-        return matricula;
-    }
-
-    void setNome(string nome){
-
-        this->nome = nome;
-    }
-
-    string getNome(){
-
-        return nome;
-    }
-
-    void setCurso(string curso){
-
-        this->curso = curso;
-
-    }
-
-    string getCurso(){
-
-        return curso;
-    }
-
-    void setPeriodo(int periodo){
         
-        this->periodo = periodo;
-    }
-    
-    int getPeriodo(){
+        void setMatricula(int matricula){
 
-        return periodo;
-    }
+            this->matricula = matricula;
 
-    void aprovarAluno(){
+        }
 
-       periodo++;
+        int getMatricula(){
+
+            return matricula;
+        }
+
+        void setNome(string nome){
+
+            this->nome = nome;
+        }
+
+        string getNome(){
+
+            return nome;
+        }
+
+        void setCurso(string curso){
+
+            this->curso = curso;
+
+        }
+
+        string getCurso(){
+
+            return curso;
+        }
+
+        void setPeriodo(int periodo){
+            
+            this->periodo = periodo;
+        }
         
-    }
+        int getPeriodo(){
 
-    void imprimirDados(){
-        cout << "Matricula: " << matricula << endl;
-        cout << "Nome: " << nome << endl;
-        cout << "Curso: " << curso << endl;
-        cout << "Periodo: " << periodo << endl;
-    }
+            return periodo;
+        }
+
+        void aprovarAluno(){
+
+        periodo++;
+            
+        }
+
+        void imprimirDados(){
+            cout << "Matricula: " << matricula << endl;
+            cout << "Nome: " << nome << endl;
+            cout << "Curso: " << curso << endl;
+            cout << "Periodo: " << periodo << endl;
+        }
 };
 
 void ler(Aluno *aluno, int n){
