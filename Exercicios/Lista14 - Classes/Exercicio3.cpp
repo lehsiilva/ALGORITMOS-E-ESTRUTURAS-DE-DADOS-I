@@ -14,47 +14,47 @@ using namespace std;
 
 class Relogio{
     private:
-    int hora;
-    int minuto;
-    int segundo;
+        int hora;
+        int minuto;
+        int segundo;
 
     public:
-    Relogio(){
-        hora = 0;
-        minuto = 0;
-        segundo = 0;
-    }
-
-    void setHora(int hora, int minuto, int segundo){
-        this->hora = hora;
-        this->minuto = minuto;
-        this->segundo = segundo;
-    }
-
-    void getHora(int &hora, int &minuto, int &segundo){
-        hora = this->hora;
-        minuto = this->minuto;
-        segundo = this->segundo;
-    }
-
-    void avancar_horario(){
-
-        segundo++;
-
-        if(segundo == 60){
-            segundo = 0;
-            minuto++;
-        }
-
-        if(minuto == 60){
-            minuto = 0;
-            hora++;
-        }
-
-        if(hora == 24){
+        Relogio(){
             hora = 0;
+            minuto = 0;
+            segundo = 0;
         }
-    }
+
+        void setHora(int hora, int minuto, int segundo){
+            this->hora = hora;
+            this->minuto = minuto;
+            this->segundo = segundo;
+        }
+
+        void getHora(int &hora, int &minuto, int &segundo){
+            hora = this->hora;
+            minuto = this->minuto;
+            segundo = this->segundo;
+        }
+
+        void avancar_horario(){
+
+            segundo++;
+
+            if(segundo == 60){
+                segundo = 0;
+                minuto++;
+            }
+
+            if(minuto == 60){
+                minuto = 0;
+                hora++;
+            }
+
+            if(hora == 24){
+                hora = 0;
+            }
+        }
 
 };
 
