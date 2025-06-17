@@ -11,152 +11,93 @@ using namespace std;
 
 class Empregado{
     private:
-        string nome;
-        int codigoSetor;
-        double salarioBase;
-        double imposto;
+    string nome;
+    int codigoSetor;
+    double salarioBase;
+    double imposto;
 
     public:
+    Empregado(string nome, int codigoSetor, double salarioBase, double imposto){
+        this->nome = nome;
+        this->codigoSetor = codigoSetor;
+        this->salarioBase = salarioBase;
+        this->imposto = imposto;
+    }
 
-        Empregado() {
-            nome = "Desconhecido";
-            codigoSetor = 0;
-            salarioBase = 0.0;
-            imposto = 0.0;
-        }
-        Empregado(string nome, int codigoSetor, double salarioBase, double imposto){
+    void setNome(string nome){
+        this->nome = nome;
+    }
 
-            this->nome = nome;
-            this->codigoSetor = codigoSetor;
-            this->salarioBase = salarioBase;
-            this->imposto = imposto;
+    void setCodigoSetor(int codigoSetor){
+        this->codigoSetor = codigoSetor;
+    }
 
-        }
+    void setSalarioBase(double salarioBase){
+        this->salarioBase = salarioBase;
+    }
 
-        void setNome(string nome){
-            this->nome = nome;
-        }
+    void setImposto(double imposto){
+        this->imposto = imposto;
+    }
 
-        string getNome(){
-            return nome;
-        }
+    string getNome(){
+        return nome;
+    }
 
-        void setCodigoSetor(int codigoSetor){
-            this->codigoSetor = codigoSetor;
-        }
+    int getCodigoSetor(){
+        return codigoSetor;
+    }
 
-        int getCodigoSetor(){
-            return codigoSetor;
-        }
+    double getSalarioBase(){
+        return salarioBase;
+    }
 
-        void setSalariobase(double salarioBase){
-            this->salarioBase = salarioBase;
-        }
-
-        double getSalariobase(){
-            return salarioBase;
-        }
-
-        void setImposto(double imposto){
-            this->imposto = imposto;
-        }
-
-        double getImposto(){
-            return imposto;
-        }
-
+    double getImposto(){
+        return imposto;
+    }
+        
 };
 
 class Vendedor : public Empregado{
     private:
-        double valorVendas;
-        double comissao;
+    double valorVendas;
+    double comissao;
 
     public:
-        Vendedor() : Empregado() {
-        valorVendas = 0.0;
-        comissao = 0.0;
-        }
+    Vendedor(string nome, int codigoSetor, double salarioBase, double imposto, double valorVendas, double comissao) : Empregado(nome, codigoSetor,salarioBase, imposto){
 
-        Vendedor(string nome, int codigoSetor, double salarioBase, double imposto, double valorVendas, double comissao) : Empregado(nome, codigoSetor, salarioBase, imposto){
-            this->valorVendas = valorVendas; 
-            this->comissao = comissao;
-        }
+        this->valorVendas = valorVendas;
+        this->comissao = comissao;
+    }
 
-        void setValorVendas(double valorVendas){
-            this->valorVendas = valorVendas;
-        }
+    double getValorVenda(){
+        return valorVendas;
+    }
 
-        void setComissao(double comissao){
-            this->comissao = comissao;
-        }
+    double getComissao(){
+        return comissao;
+    }
 
-        
-        float calcularSalario(){
+    double calcularSalario(){
 
-            double valorComissao = (valorVendas * comissao) / 100.0;
-            double salarioBruto = getSalariobase() + valorComissao;
-            double valorImposto = (salarioBruto * getImposto()) / 100.0;
-            
-            return salarioBruto - valorImposto;
-        }
+        double salarioLiquido;
 
-    
+        salarioLiquido = (getSalarioBase() + comissao * valorVendas) * (1 - getImposto());
+;
+
+        return salarioLiquido;
+    }
+
 };
 
-void ler(Vendedor &vendedor){
-
-    cout << "Digite o nome: ";
-    string nome;
-    getline(cin,nome);
-    vendedor.setNome(nome);
-
-    cout << "Digite o Codigo do setor: ";
-    int codigo;
-    cin >> codigo;
-    vendedor.setCodigoSetor(codigo);
-
-    cout << "Digite o Salario Base: ";
-    double salario_base;
-    cin >> salario_base;
-    vendedor.setSalariobase(salario_base);
-
-    cout << "Digite a porcentagem do imposto: ";
-    int imposto;
-    cin >> imposto;
-    vendedor.setImposto(imposto);
-
-    cout << "Digite o valor de vendas: ";
-    int valor_vendas;
-    cin >> valor_vendas;
-    vendedor.setValorVendas(valor_vendas);
-
-    cout << "Digite de quanto eh a comissao: ";
-    int comissao;
-    cin >> comissao;
-    vendedor.setComissao(comissao);
-
-}
-
-
-void exibir(Vendedor &vendedor){
-
-   float salario = vendedor.calcularSalario();
-
-   cout << "Salario Calculado: " << salario << endl;
-}
-
-
 int main(){
+    Vendedor vendedor1("Mariano", 1,  1000.00, 0.14, 80000.00, 0.05);
+    Vendedor vendedor2("Joana", 2 , 1500.00, 0.12, 120000.00, 0.06);
 
-    Vendedor vendedor1;
-    Vendedor vendedor2;
-
-    ler(vendedor1);
-    ler(vendedor2);
-
-    exibir(vendedor1);
-    exibir(vendedor2);
+    cout << "Vendedor 1 : " << vendedor1.getNome() << endl;
+    cout << "Salario Liquido: R$" << vendedor1.calcularSalario() << endl;
+    cout << "Vendedor 2 : " << vendedor2.getNome() << endl;
+    cout << "Salario Liquido: R$" << vendedor2.calcularSalario() << endl;
 
     return 0;
 }
